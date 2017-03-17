@@ -32,7 +32,7 @@ body {
 .navigation {
   position: absolute;
   top: 10%;
-  left: 8%;
+  left: 10%;
 }
 
 .light {
@@ -47,7 +47,7 @@ body {
   color: $md-grey;
 }
 
-.link:hover {
+.link a:hover {
   color: $color-pop;
 }
 

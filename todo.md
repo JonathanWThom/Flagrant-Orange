@@ -12,6 +12,7 @@ nav?
 styling with tuxedo css
 news? blog?
 make sure headers are good and favicon
+analytics
 
 
 sites
