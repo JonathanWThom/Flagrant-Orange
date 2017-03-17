@@ -63,6 +63,10 @@ body {
   color: $color-pop;
 }
 
+.shows, .contact {
+  color: $dark;
+}
+
 .shows hr {
   width: 50%;
   border: 1px solid $dark-grey;
@@ -81,10 +85,6 @@ body {
   color: $light;
 }
 
-// .regular-navigation h1 .light a:hover, .regular-navigation h1 .pop a:hover {
-//   color: $light;
-// }
-
 .regular-navigation h2 {
   color: $dark;
 }
@@ -98,7 +98,7 @@ body {
   text-decoration: underline;
 }
 
-.col-6 p a:hover {
+.shows p a:hover {
   color: $light;
 }
 
@@ -108,10 +108,5 @@ body {
 
 .subscribe-form {
   padding: 0px;
-  width: 50%;
+  width: 100%;
 }
-
-// [class*="counter"] span {
-//   font-size: 25px;
-//   position: absolute;
-// }
