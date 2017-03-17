@@ -29,6 +29,11 @@ body {
   display: block;
 }
 
+.regular-image {
+  width: 100%;
+  border: 3px solid $dark;
+}
+
 .navigation {
   position: absolute;
   top: 10%;
@@ -77,12 +82,17 @@ body {
   color: $light;
 }
 
-
 .soundcloud {
   margin-left: auto;
   margin-right: auto;
-  width: 25vw;
+  width: 75vw;
 }
+
+.regular-navigation .active, .col-6 .active {
+  color: $dark-grey;
+  text-decoration: underline;
+}
+
 
 // [class*="counter"] span {
 //   font-size: 25px;
