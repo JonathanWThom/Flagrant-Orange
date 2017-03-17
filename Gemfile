@@ -38,6 +38,7 @@ gem 'actionview-encoded_mail_to'
 gem "gibbon"
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+gem 'date_time_attribute'
 
 
 group :development, :test do

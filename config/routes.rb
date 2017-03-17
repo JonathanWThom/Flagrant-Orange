@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root to: "home#index"
   get '/music', to: 'music#index'
-  get '/shows', to: 'shows#index'
-  ## resources for shows instead?
+  # get '/shows', to: 'shows#index'
+  resources :shows
   get '/contact', to: 'contact#index'
   post '/subscribe', to: "subscriptions#create"
 end
