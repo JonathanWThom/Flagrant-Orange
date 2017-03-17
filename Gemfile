@@ -36,6 +36,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'actionview-encoded_mail_to'
 gem "gibbon"
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
 
 
 group :development, :test do
