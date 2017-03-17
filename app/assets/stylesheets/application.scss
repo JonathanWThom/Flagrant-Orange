@@ -41,35 +41,18 @@ body {
   left: 10%;
 }
 
-@media screen and (max-width: 650px) {
-  .navigation {
-    position: relative;
-    text-align: center;
-    top: 0;
-    left: 0;
-    .pop {
-      color: $dark;
-    }
-    .link {
-      color: $dark-grey;
-    }
-    .link a:hover {
-      color: $light;
-    }
-  }
-}
 
 .shows {
   width: 80vw;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 5%;
 }
 
 .soundcloud {
   width: 50vw;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2%;
   margin-bottom: 5%;
 }
@@ -101,6 +84,33 @@ body {
 
 .regular-navigation {
   margin-top: 20px;
+}
+
+.mobile-navigation {
+  display: none;
+  text-align: center;
+  h2 {
+    display: inline;
+    padding: 2%;
+  }
+  h1 {
+    padding: 0;
+    margin-bottom: 10px;
+    .pop {
+      color: $dark;
+    }
+  }
+  .link {
+    color: $dark;
+  }
+  .link a:hover {
+    color: $light;
+  }
+  .active {
+    color: $dark-grey;
+    text-decoration: underline;
+  }
+
 }
 
 .regular-navigation h2, .regular-navigation h1 {
@@ -141,4 +151,33 @@ body {
 .subscribe-form {
   padding: 0px;
   width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .navigation {
+    position: relative;
+    text-align: center;
+    top: 0;
+    left: 0;
+    .pop {
+      color: $dark;
+    }
+    .link {
+      color: $dark-grey;
+    }
+    .link a:hover {
+      color: $light;
+    }
+  }
+  .soundcloud {
+    width: 80vw;
+  }
+
+  .regular-navigation {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
 }
