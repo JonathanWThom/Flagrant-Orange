@@ -11,3 +11,14 @@
 @import "footer";
 @import "helpers";
 @import "animations";
+
+body {
+  background-color: $color-pop;
+}
+
+.home-image {
+  width: 90vw;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
