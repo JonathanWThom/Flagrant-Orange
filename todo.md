@@ -12,7 +12,7 @@ styling with tuxedo css
 news? blog?
 make sure headers are good and favicon
 analytics
-
+mailchimp env vars
 
 MOBILE
 

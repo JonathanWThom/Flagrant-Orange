@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/shows', to: 'shows#index'
   ## resources for shows instead?
   get '/contact', to: 'contact#index'
+  post '/subscribe', to: "subscriptions#create"
 end

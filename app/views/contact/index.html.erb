@@ -8,12 +8,16 @@
   <div class="row">
     <div class="col-6">
       <h2 class="active">Social</h2>
-        <p>Facebook icon</p>
+        <%= link_to image_tag("fb.png", class: 'icon'), "https://www.facebook.com/FlagrantOrange/" %>
       <h2 class="active">Booking</h2>
-        <p>Misty</p> - make safe links
-        <p>Eric</p>
+        <p><%= mail_to "misty@flagrantorange.com", "misty@flagrantorange.com", encode: "hex" %></p>
+        <p><%= mail_to "eric@flagrantorange.com", "eric@flagrantorange.com", encode: "hex" %></p>
       <h2 class="active">Newsletter</h2>
-        <p>sign up form</p>
+        <%= form_tag '/subscribe', method: :post do %>
+          <%= email_field_tag :email %>
+          <%= submit_tag %>
+        <% end %>
+        <!-- fix this -->
     </div>
     <div class="col-6">
       <%= image_tag 'bw4.jpg', class: 'regular-image' %>

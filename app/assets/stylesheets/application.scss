@@ -93,6 +93,13 @@ body {
   text-decoration: underline;
 }
 
+.col-6 p a:hover {
+  color: $light;
+}
+
+.icon {
+  width: 10%;
+}
 
 // [class*="counter"] span {
 //   font-size: 25px;
