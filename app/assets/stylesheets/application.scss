@@ -181,3 +181,11 @@ body {
     display: block;
   }
 }
+
+@media screen and (max-width: 768px) and (min-width: 510px) {
+  .contact {
+    margin: 5px;
+    //503-509 still lacking
+    //change icon too
+  }
+}

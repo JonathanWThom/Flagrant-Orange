@@ -5,16 +5,27 @@
   <h2 class="link"><%= link_to 'Contact', contact_path %></h2>
 </div>
 
+<div class="mobile-navigation">
+  <h1 class="text-center"><a href="/"><span class="light">Flagrant</span> <span class="pop">Orange</span></a></h1>
+  <h2 class="link"><%= link_to 'Music', music_path %></h2>
+  <h2 class="active">Shows</h2>
+  <h2 class="link"><%= link_to 'Contact', contact_path %></h2>
+</div>
+
 <div class="row shows text-center">
-  <h2 class="active text-center">Upcoming</h2>
-  <hr>
-  <% @shows.each do |show| %>
-  <h3><%= show.beautified_date %></h3>
-  <h3><%= show.where %></h3>
-  <% if show.description %>
-  <p><%= show.description %></p>
-  <% end %>
-  <hr>
+  <% if @shows.any? %>
+    <h2 class="active text-center">Upcoming</h2>
+    <hr>
+    <% @shows.each do |show| %>
+    <h3><%= show.beautified_date %></h3>
+    <h3><%= show.where %></h3>
+    <% if show.description %>
+    <p><%= show.description %></p>
+    <% end %>
+    <hr>
+    <% end %>
+  <% else %>
+    <h2 class="active text-center">Check back soon for show dates!</h2>
   <% end %>
 </div>
 <div class="row shows">

@@ -9,3 +9,6 @@ deploy and hook up custom domain
 more pics
 styling on some pages could be better - ask for feedback
 shows resize
+
+
+768 to 510 looks bad for booking
