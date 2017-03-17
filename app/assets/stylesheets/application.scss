@@ -47,6 +47,14 @@ body {
   margin-bottom: 5%;
 }
 
+.soundcloud {
+  width: 50vw;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 .light {
   color: $light;
 }
@@ -71,6 +79,11 @@ body {
   width: 50%;
   border: 1px solid $dark-grey;
 }
+
+.regular-navigation {
+  margin-top: 20px;
+}
+
 .regular-navigation h2, .regular-navigation h1 {
   display: inline;
   margin-right: 10px;
