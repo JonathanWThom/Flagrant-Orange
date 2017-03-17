@@ -13,11 +13,10 @@
         <p><%= mail_to "misty@flagrantorange.com", "misty@flagrantorange.com", encode: "hex" %></p>
         <p><%= mail_to "eric@flagrantorange.com", "eric@flagrantorange.com", encode: "hex" %></p>
       <h2 class="active">Newsletter</h2>
-        <%= form_tag '/subscribe', method: :post do %>
-          <%= email_field_tag :email %>
-          <%= submit_tag %>
-        <% end %>
-        <!-- fix this -->
+      <%= form_tag '/subscribe', method: :post, class: 'subscribe-form' do %>
+        <%= email_field_tag :email, nil, class: 'input-light', placeholder: 'Email' %>
+        <%= submit_tag 'Subscribe', :class => 'btn btn-dark' %>
+      <% end %>
     </div>
     <div class="col-6">
       <%= image_tag 'bw4.jpg', class: 'regular-image' %>

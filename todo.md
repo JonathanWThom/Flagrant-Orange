@@ -14,6 +14,9 @@ make sure headers are good and favicon
 analytics
 mailchimp env vars
 
+mailchimp instructions and template for misty
+flash stying
+
 MOBILE
 
 
