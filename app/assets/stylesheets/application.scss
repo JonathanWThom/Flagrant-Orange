@@ -40,6 +40,13 @@ body {
   left: 10%;
 }
 
+.shows {
+  width: 80vw;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+
 .light {
   color: $light;
 }
@@ -56,6 +63,10 @@ body {
   color: $color-pop;
 }
 
+.shows hr {
+  width: 50%;
+  border: 1px solid $dark-grey;
+}
 .regular-navigation h2, .regular-navigation h1 {
   display: inline;
   margin-right: 10px;

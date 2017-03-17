@@ -1,5 +1,8 @@
 class ShowsController < ApplicationController
   def index
-    ## this will be a model that can be changed by them via admin
+    @shows = Show.all
   end
+
+
+  ##only show shows in the future
 end
