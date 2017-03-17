@@ -1,5 +1,4 @@
 soundcloud
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/292463638&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 pics
 shows
 newsletter - mailchimp - https://github.com/amro/gibbon
@@ -15,5 +14,12 @@ make sure headers are good and favicon
 analytics
 
 
+MOBILE
+
+
 sites
 http://fleetfoxes.co/
+
+
+bugz
+fix top nav on other pages - too high also needs hover effect on title for home

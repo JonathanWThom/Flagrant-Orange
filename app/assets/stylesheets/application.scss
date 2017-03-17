@@ -51,6 +51,39 @@ body {
   color: $color-pop;
 }
 
+.regular-navigation h2, .regular-navigation h1 {
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.regular-navigation .light {
+  color: $dark;
+}
+
+.regular-navigation .pop {
+  color: $light;
+}
+
+// .regular-navigation h1 .light a:hover, .regular-navigation h1 .pop a:hover {
+//   color: $light;
+// }
+
+.regular-navigation h2 {
+  color: $dark;
+}
+
+.regular-navigation h2 a:hover {
+  color: $light;
+}
+
+
+.soundcloud {
+  margin-left: auto;
+  margin-right: auto;
+  width: 25vw;
+}
+
 // [class*="counter"] span {
 //   font-size: 25px;
 //   position: absolute;
