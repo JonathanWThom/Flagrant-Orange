@@ -16,9 +16,42 @@ body {
   background-color: $color-pop;
 }
 
+.home {
+  position: relative;
+}
+
 .home-image {
   width: 90vw;
   margin-top: 5%;
   margin-left: 5%;
   margin-bottom: 5%;
+  border: 3px solid $dark;
+  display: block;
 }
+
+.navigation {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
+
+.light {
+  color: $light;
+}
+
+.pop {
+  color: $color-pop;
+}
+
+.link {
+  color: $md-grey;
+}
+
+.link:hover {
+  color: $color-pop;
+}
+
+// [class*="counter"] span {
+//   font-size: 25px;
+//   position: absolute;
+// }
