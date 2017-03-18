@@ -1,8 +1,5 @@
 class ShowsController < ApplicationController
   def index
-    @shows = Show.all
+    @shows = Show.future_shows
   end
-
-
-  ##only show shows in the future
 end
