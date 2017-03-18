@@ -1,4 +1,3 @@
-only current shows
 mobile responsiveness
 make sure headers are good and favicon
 flash styling

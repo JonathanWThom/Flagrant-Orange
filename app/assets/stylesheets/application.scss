@@ -180,11 +180,16 @@ body {
   .mobile-navigation {
     display: block;
   }
+
+  .contact {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 768px) and (min-width: 510px) {
-  .contact {
-    margin: 5px;
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  .col-4 {
+    margin-left: 10px;
+    margin-right: 10px;
     //503-509 still lacking
     //change icon too
   }
