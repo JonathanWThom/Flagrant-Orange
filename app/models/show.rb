@@ -17,7 +17,7 @@ class Show < ActiveRecord::Base
         shows.push(show)
       end
     end
-    shows
+    shows.sort! { |a,b| a.when <=> b.when }
   end
 
 end
