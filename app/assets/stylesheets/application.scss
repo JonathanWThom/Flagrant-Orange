@@ -85,11 +85,18 @@ body {
 
 .regular-navigation {
   margin-top: 20px;
+  // h1 a .pop:hover, h1 a .light:hover {
+  //   color: $dark-grey;
+  // }
 }
+
 
 .mobile-navigation {
   display: none;
   text-align: center;
+  // h1 a .pop:hover, h1 a .light:hover {
+  //   color: $dark-grey;
+  // }
   h2 {
     display: inline;
     padding: 2%;
