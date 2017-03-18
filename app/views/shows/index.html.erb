@@ -1,14 +1,18 @@
 <% content_for(:title, "Flagrant Orange | Shows") %>
 
 <div class="regular-navigation">
-  <h1><a href="/"><span class="light">Flagrant</span> <span class="pop">Orange</span></a></h1>
+  <%= link_to root_path do %>
+    <h1><span class="light">Flagrant</span> <span class="pop">Orange</span></h1>
+  <% end %>
   <h2 class="link"><%= link_to 'Music', music_path %></h2>
   <h2 class="active">Shows</h2>
   <h2 class="link"><%= link_to 'Contact', contact_path %></h2>
 </div>
 
 <div class="mobile-navigation">
-  <h1 class="text-center"><a href="/"><span class="light">Flagrant</span> <span class="pop">Orange</span></a></h1>
+  <%= link_to root_path do %>
+    <h1 class="text-center"><span class="light">Flagrant</span> <span class="pop">Orange</span></h1>
+  <% end %>
   <h2 class="link"><%= link_to 'Music', music_path %></h2>
   <h2 class="active">Shows</h2>
   <h2 class="link"><%= link_to 'Contact', contact_path %></h2>
