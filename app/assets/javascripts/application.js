@@ -16,7 +16,7 @@
 //= require_tree .
 
 $(document).ready(function(){
-  $('body').on('click', 'h2.notice', function(){
+  $('body').on('click touchstart', 'h2.notice', function(){
     $('h2.notice').hide();
   });
 });
