@@ -16,6 +16,7 @@ body {
   background-color: $color-pop;
 }
 
+
 .home {
   position: relative;
 }
@@ -151,6 +152,17 @@ body {
 .subscribe-form {
   padding: 0px;
   width: 100%;
+}
+
+.regular-navigation h2.notice, .mobile-navigation h2.notice {
+  color: $light;
+}
+
+@media screen and (max-width: 815px) {
+  .regular-navigation h2.notice, .mobile-navigation h2.notice {
+    position: absolute;
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 650px) {

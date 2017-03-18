@@ -5,6 +5,7 @@
   <h2 class="link"><%= link_to 'Music', music_path %></h2>
   <h2 class="link"><%= link_to 'Shows', shows_path %></h2>
   <h2 class="active">Contact</h2>
+  <%= content_tag(:h2, notice, class: 'notice') if notice %>
 </div>
 
 <div class="mobile-navigation">
@@ -12,6 +13,7 @@
   <h2 class="link"><%= link_to 'Music', music_path %></h2>
   <h2 class="link"><%= link_to 'Shows', shows_path %></h2>
   <h2 class="active">Contact</h2>
+  <%= content_tag(:h2, notice, class: 'notice') if notice %>
 </div>
 
 <div class="row shows">

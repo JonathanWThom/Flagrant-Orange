@@ -4,9 +4,9 @@ class SubscriptionsController < ApplicationController
     begin
         ## in the model??
       gb.lists(ENV["MAILCHIMP_LIST_ID"]).members.create(body: {email_address: email_params[:email], status: "subscribed"})
-      flash[:alert] = "You're subscribed to the Flagrant Orange Newsletter"
+      flash[:notice] = "Subscribed!"
     rescue Gibbon::MailChimpError => e
-      flash[:alert] = JSON.parse(e.raw_body)['title']
+      flash[:notice] = JSON.parse(e.raw_body)['title']
     end
     redirect_to contact_path
   end
