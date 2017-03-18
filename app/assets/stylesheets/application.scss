@@ -154,18 +154,28 @@ body {
   width: 100%;
 }
 
-.regular-navigation h2.notice, .mobile-navigation h2.notice {
+h2.notice {
   color: $light;
+  background-color: $dark;
+  padding: 10px;
+  z-index: 1;
+  box-shadow: 1px 1px 1px 1px $dark;
+  position: absolute;
+  right: 10%;
+  top: 0%;
+  text-align: center;
 }
 
-@media screen and (max-width: 815px) {
-  .regular-navigation h2.notice, .mobile-navigation h2.notice {
-    position: absolute;
+@media screen and (max-width: 900px) {
+  h2.notice {
+    position: relative;
+    width: 100%;
+    top: 5%;
     right: 0;
   }
 }
-
 @media screen and (max-width: 650px) {
+
   .navigation {
     position: relative;
     text-align: center;
