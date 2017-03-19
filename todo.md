@@ -1,11 +1,8 @@
-contact-page responsiveness could use work
-make sure headers are good and favicon
-flash styling
+add lyrics with click
+styling for shows
 mailchimp instructions and template
+readme
 needs hover effect on title for home
 testing
 deploy and hook up custom domain
 more pics
-styling on some pages could be better - ask for feedback
-new admin pword, delete old one
-verify mailchimp stuff
