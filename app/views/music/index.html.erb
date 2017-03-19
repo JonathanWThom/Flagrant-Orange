@@ -22,16 +22,18 @@
   <iframe width="100%" scrolling="no" height="450" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/292463638&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 </div>
 
-<div class="songs">
-  <h2>Lyrics</h2>
-  <hr>
-  <% @songs.each do |song| %>
-    <h3 class="show-lyrics"><%= song.title %></h3>
-    <div class="lyrics">
-      <p><%= song.lyrics %><p>
-    </div>
-  <% end %>
-</div>
+<% if @songs.any? %>
+  <div class="row shows text-center">
+    <h2 class="active text-center">Lyrics</h2>
+    <hr>
+    <% @songs.each do |song| %>
+      <h3 class="show-lyrics"><%= song.title %></h3>
+      <div class="lyrics">
+        <p><%= song.lyrics %><p>
+      </div>
+    <% end %>
+  </div>
+<% end %>
 
 <div class="row shows">
   <%= image_tag 'bw5.jpg', class: 'regular-image' %>
