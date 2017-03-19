@@ -23,6 +23,21 @@ body {
   // }
 }
 
+.lyrics {
+  white-space: pre-line;
+}
+
+.lyrics {
+  display: none;
+}
+
+.songs {
+  text-align: center;
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
 .home {
   position: relative;
 }

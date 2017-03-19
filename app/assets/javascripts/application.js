@@ -19,4 +19,17 @@ $(document).ready(function(){
   $('body').on('click touchstart', 'h2.notice', function(){
     $('h2.notice').hide();
   });
+
+  $('body').on('click touchstart', '.show-lyrics', function() {
+    $(this).removeClass("show-lyrics");
+    $(this).addClass("hide-lyrics");
+    $(this).next().css("display", "block");
+  });
+
+  $('body').on('click touchstart', '.hide-lyrics', function() {
+    $(this).next().css("display", "none");
+    $(this).removeClass("hide-lyrics");
+    $(this).addClass("show-lyrics");
+  });
+
 });
