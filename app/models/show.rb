@@ -3,6 +3,7 @@ class Show < ActiveRecord::Base
 
   def beautified_date
     self.when.strftime("%A, %B %d, %Y - %I:%M %p")
+    ## remove first 0 from time if it's there
   end
 
   # scope :future_shows, -> {
