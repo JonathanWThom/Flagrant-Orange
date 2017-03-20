@@ -2,8 +2,12 @@ class Show < ActiveRecord::Base
   validates :where, :when, :presence => true
 
   def beautified_date
-    self.when.strftime("%A, %B %d, %Y - %I:%M %p")
-    ## remove first 0 from time if it's there
+    weekday_month = self.when.strftime("%A, %B ")
+    day_year = self.when.strftime("%d, %Y - ")
+    day_year.sub!(/^0+/,'')
+    time = self.when.strftime("%I:%M %p")
+    time.sub!(/^0+/,'')
+    weekday_month + day_year + time
   end
 
   # scope :future_shows, -> {
