@@ -2,7 +2,16 @@
   "RSpec": {
     "coverage": {
       "/Users/JonathanThom/Documents/Code/flagrant-orange/spec/features/shows_path_spec.rb": [
-        1
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ],
       "/Users/JonathanThom/Documents/Code/flagrant-orange/spec/rails_helper.rb": [
         null,
@@ -978,7 +987,7 @@
         1,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null,
@@ -988,13 +997,13 @@
         null,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
+        5,
         3,
-        2,
         null,
         null,
-        2,
+        3,
         null,
         null,
         null
@@ -1048,14 +1057,14 @@
       "/Users/JonathanThom/Documents/Code/flagrant-orange/app/controllers/music_controller.rb": [
         1,
         1,
-        0,
+        1,
         null,
         null
       ],
       "/Users/JonathanThom/Documents/Code/flagrant-orange/app/controllers/shows_controller.rb": [
         1,
         1,
-        0,
+        1,
         null,
         null
       ],
@@ -1102,6 +1111,17 @@
         1,
         null
       ],
+      "/Users/JonathanThom/Documents/Code/flagrant-orange/spec/features/songs_path_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/JonathanThom/Documents/Code/flagrant-orange/spec/models/show_spec.rb": [
         1,
         null,
@@ -1135,6 +1155,6 @@
         null
       ]
     },
-    "timestamp": 1490019090
+    "timestamp": 1490022026
   }
 }
