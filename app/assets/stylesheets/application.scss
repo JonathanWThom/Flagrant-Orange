@@ -18,9 +18,10 @@ body {
 
 .regular-navigation {
   margin-top: 20px;
-  // .light:hover + .pop, .pop:hover + .light, .pop:hover, .light:hover {
-  //   color: $dark-grey;
-  // }
+  .home:hover .pop, .home:hover .light {
+    cursor: pointer;
+    color: $dark-grey;
+  }
 }
 
 .lyrics {
@@ -109,6 +110,10 @@ body {
 .mobile-navigation {
   display: none;
   text-align: center;
+  .home:hover .pop, .home:hover .light {
+    cursor: pointer;
+    color: $dark-grey;
+  }
   h2 {
     display: inline;
     padding: 2%;
