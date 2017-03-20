@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-20T08:00:26-07:00">2017-03-20T08:00:26-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-20T14:55:40-07:00">2017-03-20T14:55:40-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">89.05%</span></span>
+    (<span class="covered_percent"><span class="yellow">89.4%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.99
+         0.97
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>45</b> files in total.
-    <b>210</b> relevant lines. 
-    <span class="green"><b>187</b> lines covered</span> and
+    <b>217</b> relevant lines. 
+    <span class="green"><b>194</b> lines covered</span> and
     <span class="red"><b>23</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -223,11 +223,11 @@
       <tr>
         <td class="strong"><a href="#4ab7fe0de20cc47f179f63d4a129c838f661911c" class="src_link" title="app/models/show.rb">app/models/show.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>24</td>
-        <td>10</td>
-        <td>10</td>
+        <td>18</td>
+        <td>11</td>
+        <td>11</td>
         <td>0</td>
-        <td>2.1</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
@@ -483,9 +483,9 @@
       <tr>
         <td class="strong"><a href="#0b01dde2a310227f3ffa4266ca03f053d7fc0af3" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>67</td>
-        <td>17</td>
-        <td>17</td>
+        <td>75</td>
+        <td>23</td>
+        <td>23</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -959,7 +959,7 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">permit_params :where, :when, :description</code>
+          <code class="ruby">permit_params :where, :performance_date, :description</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
@@ -1805,8 +1805,8 @@
     <h3>app/models/show.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1823,7 +1823,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :where, :when, :presence =&gt; true</code>
+          <code class="ruby">  validates :where, :performance_date, :presence =&gt; true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -1841,118 +1841,82 @@
         <li class="covered" data-hits="2" data-linenumber="5">
           <span class="hits">2</span>
           
-          <code class="ruby">    self.when.strftime(&quot;%A, %B %d, %Y - %I:%M %p&quot;)</code>
+          <code class="ruby">    weekday_month = self.performance_date.strftime(&quot;%A, %B &quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">    ## remove first 0 from time if it&#39;s there</code>
+          <code class="ruby">    day_year = self.performance_date.strftime(&quot;%d, %Y - &quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    day_year.sub!(/^0+/,&#39;&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    time = self.performance_date.strftime(&quot;%I:%M %p&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">  # scope :future_shows, -&gt; {</code>
+          <code class="ruby">    time.sub!(/^0+/,&#39;&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">  #   where(&quot;&#39;when&#39; &gt;= ?&quot;, Time.zone.now).order(:when)</code>
+          <code class="ruby">    weekday_month + day_year + time</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">  #   ## this is not actually working</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">  # }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">  def self.future_shows</code>
+          <code class="ruby">  scope :future_shows, -&gt; {</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="15">
+        <li class="covered" data-hits="2" data-linenumber="14">
           <span class="hits">2</span>
           
-          <code class="ruby">    shows = []</code>
+          <code class="ruby">    where(&quot;performance_date &gt;= ?&quot;, Time.zone.now).order(:performance_date)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="15">
           
-          <code class="ruby">    self.all.each do |show|</code>
+          
+          <code class="ruby">    ## this is not actually working</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="17">
-          <span class="hits">5</span>
+        <li class="never" data-hits="" data-linenumber="16">
           
-          <code class="ruby">      if show.when &gt; Time.zone.now</code>
+          
+          <code class="ruby">  }</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="18">
-          <span class="hits">3</span>
-          
-          <code class="ruby">        shows.push(show)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="21">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    shows.sort! { |a,b| a.when &lt;=&gt; b.when }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">end</code>
@@ -6875,7 +6839,7 @@
         <li class="covered" data-hits="2" data-linenumber="4">
           <span class="hits">2</span>
           
-          <code class="ruby">    add_attribute(:when) { DateTime.new(2017,3,20,4,5,6) }</code>
+          <code class="ruby">    add_attribute(:performance_date) { DateTime.new(2017,3,20,4,5,6) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -6935,13 +6899,13 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    show1 = create(:show, when: DateTime.now + 10)</code>
+          <code class="ruby">    show1 = create(:show, performance_date: DateTime.now + 10)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    show2 = create(:show, where: &#39;Key Arena&#39;, when: DateTime.now - 10)</code>
+          <code class="ruby">    show2 = create(:show, where: &#39;Key Arena&#39;, performance_date: DateTime.now - 10)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
@@ -7085,7 +7049,7 @@
         <li class="covered" data-hits="2" data-linenumber="5">
           <span class="hits">2</span>
           
-          <code class="ruby">  it { should validate_presence_of :when }</code>
+          <code class="ruby">  it { should validate_presence_of :performance_date }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
@@ -7115,7 +7079,7 @@
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(show.beautified_date).to eq(&quot;Monday, March 20, 2017 - 04:05 AM&quot;)</code>
+          <code class="ruby">      expect(show.beautified_date).to eq(&quot;Monday, March 20, 2017 - 4:05 AM&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
@@ -7151,19 +7115,19 @@
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">      show1 = create(:show, when: DateTime.now - 10)</code>
+          <code class="ruby">      show1 = create(:show, performance_date: DateTime.now - 10)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">      show2 = create(:show, when: DateTime.now + 10 )</code>
+          <code class="ruby">      show2 = create(:show, performance_date: DateTime.now + 10 )</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">      show3 = create(:show, when: DateTime.now + 5 )</code>
+          <code class="ruby">      show3 = create(:show, performance_date: DateTime.now + 5 )</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="19">
@@ -7253,8 +7217,8 @@
     <h3>spec/rails_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>17</b> relevant lines. 
-      <span class="green"><b>17</b> lines covered</span> and
+      <b>23</b> relevant lines. 
+      <span class="green"><b>23</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -7659,6 +7623,54 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="69">
+          <span class="hits">1</span>
+          
+          <code class="ruby">VCR.configure do |c|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  c.cassette_library_dir = &#39;spec/cassettes&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  c.hook_into :webmock</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  c.configure_rspec_metadata!</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  c.filter_sensitive_data(&#39;&lt;mailchimp api key&gt;&#39;) { ENV[&#39;MAILCHIMP_API_KEY&#39;] }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  c.filter_sensitive_data(&#39;&lt;mailchip list id&gt;&#39;) { ENV[&#39;MAILCHIMP_LIST_ID&#39;] }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
           
           
           <code class="ruby">end</code>

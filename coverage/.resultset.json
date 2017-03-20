@@ -80,6 +80,14 @@
         1,
         1,
         null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/JonathanThom/Documents/Code/flagrant-orange/config/environment.rb": [
@@ -988,22 +996,16 @@
         null,
         1,
         2,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        2,
+        2,
+        2,
+        2,
+        2,
         null,
         null,
         1,
         2,
-        2,
-        5,
-        3,
         null,
-        null,
-        3,
         null,
         null,
         null
@@ -1155,6 +1157,6 @@
         null
       ]
     },
-    "timestamp": 1490022026
+    "timestamp": 1490046940
   }
 }
