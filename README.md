@@ -1,24 +1,23 @@
-# README
+# Flagrant Orange
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Website for the Portland band Flagrant Orange.
 
-Things you may want to cover:
+View at [https://flagrant-orange.herokuapp.com/](https://flagrant-orange.herokuapp.com/).
 
-* Ruby version
+## Technology
 
-* System dependencies
+* Ruby on Rails
+* jQuery
+* [TuxedoCSS](http://tuxedocss.us/)
+* ActiveAdmin
+* Gibbon
 
-* Configuration
+## In Progress
 
-* Database creation
+1. Currently filled with seeded data.
 
-* Database initialization
+2. Need to finish testing for Mailchimp API using VCR.
 
-* How to run the test suite
+## License
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+MIT

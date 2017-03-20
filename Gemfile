@@ -51,6 +51,8 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'dotenv-rails'
   gem 'simplecov', require: false
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do

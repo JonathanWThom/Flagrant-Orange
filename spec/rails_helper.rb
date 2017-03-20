@@ -65,3 +65,11 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :webmock
+  c.configure_rspec_metadata!
+  c.filter_sensitive_data('<mailchimp api key>') { ENV['MAILCHIMP_API_KEY'] }
+  c.filter_sensitive_data('<mailchip list id>') { ENV['MAILCHIMP_LIST_ID'] }
+end
