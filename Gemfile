@@ -38,6 +38,7 @@ gem 'actionview-encoded_mail_to'
 gem "gibbon"
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 
 group :development, :test do
