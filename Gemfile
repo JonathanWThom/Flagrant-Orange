@@ -39,6 +39,7 @@ gem "gibbon"
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+gem 'aws-sdk', '~> 2.3'
 
 
 group :development, :test do
