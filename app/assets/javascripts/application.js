@@ -21,15 +21,7 @@ $(document).ready(function(){
   });
 
   $(document).on('click touchstart', '.show-lyrics', function() {
-    $(this).removeClass("show-lyrics");
-    $(this).addClass("hide-lyrics");
-    $(this).next().css("display", "block");
+    var lyricBody = $(this).closest(".lyric-display");
+    $(lyricBody).find(".lyrics").toggle();
   });
-
-  $(document).on('click touchstart', '.hide-lyrics', function() {
-    $(this).next().css("display", "none");
-    $(this).removeClass("hide-lyrics");
-    $(this).addClass("show-lyrics");
-  });
-
 });

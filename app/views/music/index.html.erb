@@ -23,10 +23,14 @@
     <h2 class="active text-center">Music</h2>
     <hr>
     <% @songs.each do |song| %>
-      <h3 class="show-lyrics"><%= song.title %></h3>
-      <%= audio_tag(song.audio, controls: true) %>
-      <div class="lyrics">
-        <p><%= song.lyrics %><p>
+      <div class="lyric-display">
+        <h3 class="show-lyrics"><%= song.title %></h3>
+        <% if song.audio.present? %>
+          <%= audio_tag(song.audio, controls: true) %>
+        <% end %>
+        <div class="lyrics">
+          <p><%= song.lyrics %><p>
+        </div>
       </div>
     <% end %>
   </div>

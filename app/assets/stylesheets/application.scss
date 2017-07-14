@@ -32,6 +32,12 @@ body {
   display: none;
 }
 
+.hide-lyrics {
+  .lyrics {
+    display: block;
+  }
+}
+
 .show-lyrics, .hide-lyrics {
   margin-bottom: 0;
 }
