@@ -20,7 +20,7 @@ $(document).ready(function(){
     $('h2.notice').hide();
   });
 
-  $(document).on('click touchstart', '.show-lyrics', function() {
+  $(document).on('click touchstart', '.show-lyrics, .fa-caret-up, .fa-caret-down', function() {
     var lyricBody = $(this).closest(".lyric-display");
     $(lyricBody).find(".lyrics, .fa-caret-down, .fa-caret-up").toggle();
   });
