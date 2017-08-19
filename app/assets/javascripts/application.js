@@ -22,6 +22,6 @@ $(document).ready(function(){
 
   $(document).on('click touchstart', '.show-lyrics', function() {
     var lyricBody = $(this).closest(".lyric-display");
-    $(lyricBody).find(".lyrics").toggle();
+    $(lyricBody).find(".lyrics, .fa-caret-down, .fa-caret-up").toggle();
   });
 });

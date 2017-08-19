@@ -1,3 +1,4 @@
+@import "font-awesome";
 @import "reset";
 @import "global";
 @import "mediaQueries";
@@ -28,8 +29,16 @@ body {
   white-space: pre-line;
 }
 
-.lyrics {
+.lyrics, .fa-caret-down {
   display: none;
+}
+
+.fa {
+  margin-left: 10px;
+}
+
+.fa-lg {
+  vertical-align: 0%;
 }
 
 .hide-lyrics {
@@ -42,8 +51,10 @@ body {
   margin-bottom: 0;
 }
 
-.show-lyrics:hover, .hide-lyrics:hover {
-  color: $light;
+.lyric-display:hover {
+  .show-lyrics, .hide-lyrics, i {
+    color: $light;
+  }
 }
 
 .home {
@@ -194,6 +205,10 @@ h2.notice {
   right: 10%;
   top: 0%;
   text-align: center;
+}
+
+.display-inline-block {
+  display: inline-block;
 }
 
 @media screen and (max-width: 900px) {

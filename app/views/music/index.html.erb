@@ -24,7 +24,10 @@
     <hr>
     <% @songs.each do |song| %>
       <div class="lyric-display">
-        <h3 class="show-lyrics"><%= song.title %></h3>
+        <h3 class="show-lyrics display-inline-block"><%= song.title %></h3>
+        <i class="fa fa-caret-up fa-lg"></i>
+        <i class="fa fa-caret-down fa-lg"></i>
+        <br>
         <% if song.audio.present? %>
           <%= audio_tag(song.audio, controls: true, controlsList: "nodownload") %>
         <% end %>
