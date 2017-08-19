@@ -41,3 +41,11 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/add-on/jplayer.playlist.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $("audio").bind("contextmenu",function(){
+      return false;
+    });
+  });
+</script>
