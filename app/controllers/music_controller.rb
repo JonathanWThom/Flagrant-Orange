@@ -1,5 +1,5 @@
 class MusicController < ApplicationController
   def index
-    @songs = Song.all
+    @songs = Song.order(:rank)
   end
 end

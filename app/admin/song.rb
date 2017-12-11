@@ -3,10 +3,11 @@ ActiveAdmin.register Song do
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
 
-  permit_params :title, :lyrics, :audio
+  permit_params :title, :lyrics, :audio, :rank
 
   form do |f|
     f.inputs "Song Details" do
+      f.input :rank
       f.input :title
       f.input :lyrics
       f.input :audio, :as => :file
