@@ -1,22 +1,5 @@
 <% content_for(:title, "Flagrant Orange | Shows") %>
-
-<div class="regular-navigation">
-  <%= link_to root_path do %>
-    <h1 class="home"><span class="light">Flagrant</span> <span class="pop">Orange</span></h1>
-  <% end %>
-  <h2 class="link"><%= link_to 'Music', music_path %></h2>
-  <h2 class="active">Shows</h2>
-  <h2 class="link"><%= link_to 'Contact', contact_path %></h2>
-</div>
-
-<div class="mobile-navigation">
-  <%= link_to root_path do %>
-    <h1 class="home"><span class="light">Flagrant</span> <span class="pop">Orange</span></h1>
-  <% end %>
-  <h2 class="link"><%= link_to 'Music', music_path %></h2>
-  <h2 class="active">Shows</h2>
-  <h2 class="link"><%= link_to 'Contact', contact_path %></h2>
-</div>
+<%= render "shared/navigation" %>
 
 <div class="row shows text-center">
   <% if @shows.any? %>
