@@ -1,0 +1,13 @@
+.navigation-logo {
+  width: 60px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.regular-navigation {
+  margin-left: 20px;
+  .link {
+    position: relative;
+    top: -15px;
+  }
+}
