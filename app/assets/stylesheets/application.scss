@@ -252,13 +252,25 @@ h2.notice {
   .contact {
     text-align: center;
   }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.footer {
+  text-align: center;
+  &--text {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 500px) {
   .col-4 {
     margin-left: 10px;
     margin-right: 10px;
-    //503-509 still lacking
-    //change icon too
   }
 }
