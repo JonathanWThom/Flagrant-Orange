@@ -1,10 +1,15 @@
 <% content_for(:title, "Flagrant Orange | Music") %>
 <%= render "shared/navigation" %>
 
-<% if @songs.any? %>
-  <div class="row shows text-center">
-    <h2 class="active text-center">Music</h2>
-    <hr>
+<div class="row shows text-center">
+  <h2 class="active text-center">Music</h2>
+  <h4>
+    "Flagrant Orange deals in folk rock that wanders into interesting indie territory fairly frequently." -
+    <em><%= link_to "The Portland Mercury", "https://www.portlandmercury.com/events/19686705/flagrant-orange-lauren-kershner-cj-hawley" %></em>
+  </h4>
+    <!-- https://www.portlandmercury.com/events/19686705/flagrant-orange-lauren-kershner-cj-hawley -->
+  <hr>
+  <% if @songs.any? %>
     <% @songs.each do |song| %>
       <div class="lyric-display">
         <h3 class="show-lyrics display-inline-block"><%= song.title %></h3>
@@ -20,11 +25,11 @@
       </div>
     <% end %>
     <hr>
-    <%= link_to "https://flagrantorange.bandcamp.com" do %>
-      <h3>Downloads available on Bandcamp</h3>
-    <% end %>
-  </div>
-<% end %>
+  <% end %>
+  <%= link_to "https://flagrantorange.bandcamp.com" do %>
+    <h3>Downloads available on Bandcamp</h3>
+  <% end %>
+</div>
 
 <div class="row shows">
   <%= image_tag 'bw5.jpg', class: 'regular-image' %>
