@@ -272,6 +272,12 @@ h2.notice {
   }
 }
 
+.quote {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 @media screen and (max-width: 768px) and (min-width: 500px) {
   .col-4 {
     margin-left: 10px;

@@ -3,11 +3,13 @@
 
 <div class="row shows text-center">
   <h2 class="active text-center">Music</h2>
-  <h4>
-    "Flagrant Orange deals in folk rock that wanders into interesting indie territory fairly frequently." -
-    <em><%= link_to "The Portland Mercury", "https://www.portlandmercury.com/events/19686705/flagrant-orange-lauren-kershner-cj-hawley" %></em>
+  <h4 class="quote">
+    "Flagrant Orange deals in folk rock that wanders into interesting indie territory fairly frequently."
+    <br>
+    <em>- <%= link_to "The Portland Mercury", "https://www.portlandmercury.com/events/19686705/flagrant-orange-lauren-kershner-cj-hawley" %></em>
   </h4>
-    <!-- https://www.portlandmercury.com/events/19686705/flagrant-orange-lauren-kershner-cj-hawley -->
+
+
   <hr>
   <% if @songs.any? %>
     <% @songs.each do |song| %>
