@@ -16,6 +16,7 @@
 @import "navigation";
 
 body {
+  color: $dark;
   background-color: $color-pop;
 }
 
@@ -69,7 +70,7 @@ body {
 
 .home-image {
   width: 90vw;
-  margin-top: 5%;
+  margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
@@ -120,15 +121,10 @@ body {
   color: $color-pop;
 }
 
-.shows, .contact {
-  color: $dark;
-}
-
 .shows hr {
   width: 50%;
   border: 1px solid $dark-grey;
 }
-
 
 .mobile-navigation {
   display: none;
@@ -140,6 +136,7 @@ body {
   h2 {
     display: inline;
     padding: 2%;
+    font-size: 22px;
   }
   h1 {
     margin-bottom: 10px;
@@ -193,6 +190,9 @@ body {
 
 .icon {
   width: 10%;
+  &--wide {
+    width: 13%;
+  }
 }
 
 .subscribe-form {
@@ -230,8 +230,7 @@ h2.notice {
     right: 0;
   }
 }
-@media screen and (max-width: 650px) {
-
+@media screen and (max-width: 850px) {
   .navigation {
     position: relative;
     text-align: center;
@@ -247,10 +246,6 @@ h2.notice {
       color: $light;
     }
   }
-  .soundcloud {
-    width: 80vw;
-  }
-
   .regular-navigation {
     display: none;
   }
@@ -261,6 +256,7 @@ h2.notice {
 
   .contact {
     text-align: center;
+    width: 100%;
   }
 
   .footer {
@@ -279,12 +275,5 @@ h2.notice {
   text-align: center;
   &--text {
     font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 500px) {
-  .col-4 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }

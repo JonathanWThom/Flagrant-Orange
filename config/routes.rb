@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :shows
   get '/contact', to: 'contact#index'
   post '/subscribe', to: "subscriptions#create"
+  get "/about", to: "about#index"
 end

@@ -2,13 +2,11 @@
 <%= render "shared/navigation" %>
 
 <div class="row shows text-center">
-  <h2 class="active text-center">Music</h2>
   <h4 class="quote">
     "Flagrant Orange deals in folk rock that wanders into interesting indie territory fairly frequently."
     <br>
     <em>- <%= link_to "The Portland Mercury", "https://www.portlandmercury.com/events/19686705/flagrant-orange-lauren-kershner-cj-hawley" %></em>
   </h4>
-
 
   <hr>
   <% if @songs.any? %>
@@ -34,7 +32,7 @@
 </div>
 
 <div class="row shows">
-  <%= image_tag 'bw5.jpg', class: 'regular-image' %>
+  <%= image_tag 'full_band_1.jpg', class: 'regular-image' %>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/add-on/jplayer.playlist.js"></script>
