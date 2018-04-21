@@ -1,0 +1,17 @@
+.about {
+  @extend %centered;
+  line-height: 30px;
+  width: 60%;
+}
+
+.about-image {
+  border: 3px solid $dark;
+  margin: 10px;
+  width: 25%;
+}
+
+@media screen and (max-width: 850px) {
+  .about {
+    width: 100%;
+  }
+}

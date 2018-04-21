@@ -1,12 +1,94 @@
-.navigation-logo {
-  width: 60px;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.regular-navigation {
+.navigation {
   margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+
+  .home:hover .pop, .home:hover .light {
+    cursor: pointer;
+    color: $dark-grey;
+  }
+
+  h2, h1 {
+    text-align: center;
+    display: inline;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    color: $dark;
+  }
+
+  h2 a:hover {
+    color: $light;
+  }
+
+  .light {
+    color: $dark;
+  }
+
+  .pop {
+    color: $light;
+  }
+
+  .active {
+    color: $dark-grey;
+    text-decoration: underline;
+  }
+
   .link {
     position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .navigation-links {
+    margin-top: 50px;
+    display: block;
+  }
+
+  .home-logo {
+    display: inline-block;
+    top: 8px;
+    margin-right: -18px;
+    position: relative;
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navigation {
+    text-align: center;
+    margin-left: 0px;
+
+    h1 {
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 10px;
+      font-size: 36px;
+    }
+
+    h2 {
+      display: inline;
+      padding: 2%;
+      font-size: 22px;
+    }
+
+    .link {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .navigation-links {
+      margin-top: 20px;
+      display: block;
+    }
+
+    .home-logo {
+      width: 50px;
+      margin-right: -8px;
+    }
   }
 }

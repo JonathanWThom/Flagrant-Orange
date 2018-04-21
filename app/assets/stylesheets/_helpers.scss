@@ -171,6 +171,8 @@
   align-items: flex-end;
 }
 
+// Margin and padding
+
 $styles: margin padding;
 $directions: left right top bottom;
 
@@ -181,4 +183,25 @@ $directions: left right top bottom;
       .#{$style}-#{$direction}-#{$i} { #{$style}-#{$direction}: #{$i}px }
     }
   }
+}
+
+// Floats
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clear-both {
+  clear: both
+}
+
+// Alignment
+
+%centered {
+  margin-left: auto;
+  margin-right: auto;
 }

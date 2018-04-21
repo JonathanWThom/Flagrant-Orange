@@ -12,20 +12,12 @@
 @import "footer";
 @import "helpers";
 @import "animations";
-@import "home";
 @import "navigation";
+@import "about";
 
 body {
   color: $dark;
   background-color: $color-pop;
-}
-
-.regular-navigation {
-  margin-top: 20px;
-  .home:hover .pop, .home:hover .light {
-    cursor: pointer;
-    color: $dark-grey;
-  }
 }
 
 .lyrics {
@@ -69,39 +61,24 @@ body {
 }
 
 .home-image {
-  width: 90vw;
+  @extend %centered;
+  width: 50vw;
   margin-top: 3%;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 5%;
   border: 3px solid $dark;
   display: block;
 }
 
 .regular-image {
-  width: 100%;
+  @extend %centered;
+  display: block;
+  width: 50%;
   border: 3px solid $dark;
 }
 
-.navigation {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-}
-
-
 .shows {
+  @extend %centered;
   width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5%;
-}
-
-.soundcloud {
-  width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
   margin-bottom: 5%;
 }
 
@@ -126,60 +103,7 @@ body {
   border: 1px solid $dark-grey;
 }
 
-.mobile-navigation {
-  display: none;
-  text-align: center;
-  .home:hover .pop, .home:hover .light {
-    cursor: pointer;
-    color: $dark-grey;
-  }
-  h2 {
-    display: inline;
-    padding: 2%;
-    font-size: 22px;
-  }
-  h1 {
-    margin-bottom: 10px;
-    .pop {
-      color: $dark;
-    }
-  }
-  .link {
-    color: $dark;
-  }
-  .link a:hover {
-    color: $light;
-  }
-  .active {
-    color: $dark-grey;
-    text-decoration: underline;
-  }
-
-}
-
-.regular-navigation h2, .regular-navigation h1 {
-  display: inline;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.regular-navigation .light {
-  color: $dark;
-}
-
-.regular-navigation .pop {
-  color: $light;
-}
-
-.regular-navigation h2 {
-  color: $dark;
-}
-
-.regular-navigation h2 a:hover {
-  color: $light;
-}
-
-.regular-navigation .active, .col-6 .active {
+.col-6 .active {
   color: $dark-grey;
   text-decoration: underline;
 }
@@ -222,38 +146,7 @@ h2.notice {
   width: 50%;
 }
 
-@media screen and (max-width: 900px) {
-  h2.notice {
-    position: relative;
-    width: 100%;
-    top: 5%;
-    right: 0;
-  }
-}
 @media screen and (max-width: 850px) {
-  .navigation {
-    position: relative;
-    text-align: center;
-    top: 0;
-    left: 0;
-    .pop {
-      color: $dark;
-    }
-    .link {
-      color: $dark-grey;
-    }
-    .link a:hover {
-      color: $light;
-    }
-  }
-  .regular-navigation {
-    display: none;
-  }
-
-  .mobile-navigation {
-    display: block;
-  }
-
   .contact {
     text-align: center;
     width: 100%;
@@ -268,6 +161,10 @@ h2.notice {
 
   .quote {
     width: 100%;
+  }
+
+  .home-image, .regular-image {
+    width: 70vw;
   }
 }
 
