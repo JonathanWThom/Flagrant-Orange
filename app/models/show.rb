@@ -15,6 +15,8 @@ class Show < ActiveRecord::Base
   }
 
   scope :past_shows, -> {
-    where("performance_date < ?", Time.zone.today).order(:performance_date)
+    where("performance_date < ?", Time.zone.today).
+      order(:performance_date).
+      reverse_order
   }
 end
