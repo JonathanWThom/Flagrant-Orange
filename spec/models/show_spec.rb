@@ -18,5 +18,10 @@ describe Show do
       show3 = create(:show, performance_date: DateTime.now + 5 )
       expect(Show.future_shows).to eq([show3, show2])
     end
+
+    it "will return shows on today's date" do
+      show = create(:show, performance_date: DateTime.now)
+      expect(Show.future_shows).to eq([show])
+    end
   end
 end

@@ -11,7 +11,7 @@ class Show < ActiveRecord::Base
   end
 
   scope :future_shows, -> {
-    where("performance_date >= ?", Time.zone.now).order(:performance_date)
+    where("performance_date >= ?", Time.zone.today).order(:performance_date)
   }
 
 end
