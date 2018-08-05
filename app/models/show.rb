@@ -14,4 +14,7 @@ class Show < ActiveRecord::Base
     where("performance_date >= ?", Time.zone.today).order(:performance_date)
   }
 
+  scope :past_shows, -> {
+    where("performance_date < ?", Time.zone.today).order(:performance_date)
+  }
 end
