@@ -15,6 +15,14 @@ ActiveAdmin.register Song do
     end
     f.actions
   end
+
+  show do
+    attributes_table do
+      row :rank
+      row :title
+      row :lyrics
+    end
+  end
 #
 # or
 #

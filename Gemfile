@@ -39,8 +39,7 @@ gem 'actionview-encoded_mail_to'
 gem "gibbon"
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
-gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
-gem 'aws-sdk', '~> 2.3'
+gem "aws-sdk-s3", require: false
 gem "font-awesome-rails"
 gem "active_link_to"
 gem "bootsnap"

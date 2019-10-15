@@ -17,7 +17,7 @@
         <i class="fa fa-caret-down fa-lg"></i>
         <br>
         <% if song.audio.present? %>
-          <%= audio_tag(song.audio, controls: true, controlsList: "nodownload") %>
+          <%= audio_tag(url_for(song.audio), controls: true, controlsList: "nodownload") %>
         <% end %>
         <div class="lyrics">
           <p><%= song.lyrics %><p>
