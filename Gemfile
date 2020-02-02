@@ -43,6 +43,7 @@ gem "aws-sdk-s3", require: false
 gem "font-awesome-rails"
 gem "active_link_to"
 gem "bootsnap"
+gem "rb-readline"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

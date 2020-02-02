@@ -5,10 +5,13 @@
       <span class="light">lagrant</span> <span class="pop">Orange</span>
     </h1>
   <% end %>
-  <div class="navigation-links">
-    <h2 class="link"><%= active_link_to "About", about_path %></h2>
-    <h2 class="link"><%= active_link_to "Music", music_path %></h2>
-    <h2 class="link"><%= active_link_to "Shows", shows_path %></h2>
-    <h2 class="link"><%= active_link_to "Contact", contact_path %></h2>
-  </div>
+
+  <% if false %>
+    <div class="navigation-links">
+      <h2 class="link"><%= active_link_to "About", about_path %></h2>
+      <h2 class="link"><%= active_link_to "Music", music_path %></h2>
+      <h2 class="link"><%= active_link_to "Shows", shows_path %></h2>
+      <h2 class="link"><%= active_link_to "Contact", contact_path %></h2>
+    </div>
+  <% end %>
 </div>

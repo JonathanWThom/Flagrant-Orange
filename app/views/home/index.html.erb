@@ -1,8 +1,19 @@
 <% content_for(:title, "Flagrant Orange") %>
 <%= render "shared/navigation" %>
 
-<div class="home">
-  <%= image_tag "full_band_2.jpg", class: "home-image" %>
-</div>
+<% if false %>
+  <div class="home">
+    <%= image_tag "full_band_2.jpg", class: "home-image" %>
+  </div>
 
-<%= render "shared/footer" %>
+  <%= render "shared/footer" %>
+<% else %>
+  <div class="home_contact">
+    <%= link_to image_tag("fb-blue.png", class: "icon--sorta-slim"), "https://www.facebook.com/FlagrantOrange/" %>
+    <%= link_to image_tag("instagram.png", class: "icon--slim"), "https://www.instagram.com/flagrantorange/" %>
+    <%= link_to image_tag("email.png", class: "icon--slim"), "https://www.instagram.com/flagrantorange/" %>
+  </div>
+  <div class="home">
+    <%= image_tag "full_band_3.jpg", class: "home-image" %>
+  </div>
+<% end %>
