@@ -11,9 +11,11 @@
   <div class="home_contact">
     <%= link_to image_tag("fb-blue.png", class: "icon--sorta-slim"), "https://www.facebook.com/FlagrantOrange/" %>
     <%= link_to image_tag("instagram.png", class: "icon--slim"), "https://www.instagram.com/flagrantorange/" %>
-    <%= link_to image_tag("email.png", class: "icon--slim"), "https://www.instagram.com/flagrantorange/" %>
+    <%= mail_to "flagrantorange@gmail.com", encode: "hex" do %>
+     <%= image_tag("email.png", class: "icon--slim") %>
+    <% end %>
   </div>
   <div class="home">
-    <%= image_tag "full_band_3.jpg", class: "home-image" %>
+    <%= image_tag "misty_eric_1.jpeg", class: "home-image" %>
   </div>
 <% end %>
